@@ -1,0 +1,85 @@
+.container {
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.container .form {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    width: 400px;
+    border-radius: 6px;
+
+}
+.container .form .input {
+    width: 290px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+.container .form .add {
+    background-color: skyblue;
+    display: block;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+    transition: 0.4s;
+}
+.container .form .add:hover {
+    background-color: rgb(37, 37, 37);
+    color: skyblue;
+}
+.container .tasks {
+    margin-top: 20px;
+    border-radius: 6px;
+    width: 400px;
+    padding: 20px;
+    min-height: 30px;
+    background-color: #eee;
+}
+.tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 22px;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+}
+.tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+.tasks .task:hover {
+    background-color: #f7f7f7;
+}
+.tasks .task.done {
+    opacity: 0.5;
+}
+.tasks .task span.del {
+    font-weight: bold;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    display: flex;
+    padding: 1px 6px;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container .delete-all {
+    width: fit-content;
+    display: block;
+    background-color: slateblue;
+    color: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    margin-top: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    border-color: slateblue;
+}
